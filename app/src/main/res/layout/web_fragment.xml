@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@android:id/title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/beige"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@mipmap/common_title_left_back_btn_icon"
+            android:id="@+id/web_back" />
+
+        <ImageView
+            android:id="@+id/web_top"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@mipmap/common_title_right_more" />
+
+        <ImageView
+            android:id="@+id/wen_comment"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@+id/web_top"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/web_top"
+            android:src="@mipmap/act_card_comment" />
+
+        <TextView
+            android:id="@+id/web_comments"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@+id/web_top"
+            android:background="@drawable/cirle"
+            android:gravity="center"
+            android:text="15"
+            android:textSize="10dp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@android:id/title"
+        android:layout_alignParentStart="true">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:layout_width="match_parent"
+            android:divider="@drawable/layout_list"
+            android:dividerHeight="1dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:id="@+id/web_listview"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="跟帖"
+        android:background="#50000000"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:id="@+id/web_gentie"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+
+
+

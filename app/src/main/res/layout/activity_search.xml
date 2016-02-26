@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.l000phone.mylore.SearchActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="搜索"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/search_goback"
+            android:src="@mipmap/common_title_left_back_btn_icon" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgraoud"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:layout_width="0dp"
+            android:queryHint="书名.作者"
+            android:background="@drawable/shape_search"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_searchview"
+            android:iconifiedByDefault="false"
+            android:layout_weight="1"
+            >
+        </SearchView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/fgm_section_more_search_btn_bg"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="搜索"
+            android:id="@+id/search_text"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/search_llcontainer"></LinearLayout>
+</LinearLayout>

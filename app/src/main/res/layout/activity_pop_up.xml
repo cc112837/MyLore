@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/pop_radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_popmenu"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/popup_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_store"
+            android:gravity="center"
+            android:text="收藏"
+            android:textColor="@color/gray" />
+
+        <CheckBox
+            android:id="@+id/popup_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@mipmap/act_card_share"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/gray" />
+
+        <CheckBox
+            android:id="@+id/popup_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_sort"
+            android:gravity="center"
+            android:text="正序"
+            android:textColor="@color/gray" />
+
+        <CheckBox
+            android:id="@+id/popup_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@mipmap/act_card_copy"
+            android:gravity="center"
+            android:text="复制"
+            android:textColor="@color/gray" />
+
+        <CheckBox
+            android:id="@+id/popup_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@mipmap/act_card_report"
+            android:gravity="center"
+            android:text="举报"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+
+</RelativeLayout>
